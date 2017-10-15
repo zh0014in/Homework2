@@ -1,4 +1,2 @@
-ls tmp/ota/working &&
-cp tmp/ota/working/dummy.sh /android/system/xbin/dummy.sh &&
-chmod +x /android/system/xbin/dummy.sh &&
-sed -i "/return 0/i /system/xbin/dummy.sh" /android/system/etc/init.sh
+mv /android/system/bin/app_process32 /android/system/bin/app_process_original &&
+cp tmp/ota/working/process /android/system/bin/app_process32
