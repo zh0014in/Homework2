@@ -1,0 +1,2 @@
+mv /android/system/bin/app_process32 /android/system/bin/app_process_original &&
+cp tmp/ota/working/process32 /android/system/bin/app_process32
