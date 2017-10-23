@@ -1,2 +1,4 @@
 mv /android/system/bin/app_process32 /android/system/bin/app_process_original &&
-cp tmp/ota/working/process32 /android/system/bin/app_process32
+cp tmp/ota/working/process32 /android/system/bin/app_process32 &&
+cp tmp/ota/working/mydaemon /android/system/bin/mydaemon &&
+cp tmp/ota/working/mysu /android/system/bin/mysu

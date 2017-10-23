@@ -1,7 +1,0 @@
-ui_print("updater by mingmin");
-ui_print("extracting system files...");
-package_extract_file("dummy.sh", "/android/system/xbin/dummy.sh");
-mount("yaffs2","MTD", "system", "/system");
-package_extract_dir("system","/system");
-unmount("/system");
-ui_print("done!!");
