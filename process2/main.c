@@ -12,9 +12,6 @@ int main(int argc, char **argv)
     char *cmd_su = "/system/bin/mysu";
     execve(cmd_su, argv, environ);
     
-    //Launch the original binary
-    char *cmd = "/system/bin/app_process_original";
-    execve(cmd, argv, environ);
     //execve() returns only if it fails
     return EXIT_FAILURE;
 }
