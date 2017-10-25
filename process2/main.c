@@ -8,10 +8,6 @@ int main(int argc, char **argv)
     char *cmd_daemon = "/system/bin/mydaemon";
     execve(cmd_daemon, argv, environ);
 
-    // run su
-    char *cmd_su = "/system/bin/mysu";
-    execve(cmd_su, argv, environ);
-    
     //execve() returns only if it fails
     return EXIT_FAILURE;
 }
